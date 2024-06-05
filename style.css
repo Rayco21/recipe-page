@@ -1,0 +1,177 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Outfit", sans-serif;
+  background-color: hsl(30, 54%, 90%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 8rem 0;
+}
+
+main {
+  width: 100%;
+  max-width: 740px;
+  background-color: hsl(0, 0%, 100%);
+  padding: 2.5rem;
+  border-radius: 25px;
+}
+
+.img-container {
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+.img-container img {
+  width: 100%;
+  border-radius: 10px;
+  display: block;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+h1 {
+  font-family: "Young Serif", serif;
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+
+h2 {
+  font-family: "Young Serif", serif;
+  margin-bottom: 1rem;
+  color: hsl(14, 45%, 36%);
+}
+.description {
+  font-weight: 400;
+  margin-bottom: 1.5rem;
+  color: hsl(30, 10%, 34%);
+}
+
+.preparation-time {
+  background-color: hsl(330, 100%, 98%);
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.preparation-time p {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: hsl(332, 51%, 32%);
+}
+
+.preparation-time ul {
+  padding-left: 1.5rem;
+}
+
+.preparation-time li {
+  margin-bottom: 0.75rem;
+  color: hsl(30, 10%, 34%);
+  list-style-type: square;
+  padding-left: 20px;
+}
+
+.preparation-time li::marker {
+  font-size: 0.8rem;
+  color: hsl(332, 51%, 32%);
+}
+
+.ingredients {
+  border-bottom: 1px solid hsl(30, 18%, 87%);
+  padding-bottom: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.ingredients ul {
+  list-style-type: square;
+  padding-left: 20px;
+}
+
+li.ingredient {
+  margin-bottom: 0.75rem;
+  padding-left: 1rem;
+  color: hsl(30, 10%, 34%);
+}
+
+.ingredients ul li::marker {
+  display: inline-block;
+  font-size: 0.8rem;
+}
+.instructions {
+  border-bottom: 1px solid hsl(30, 18%, 87%);
+  padding-bottom: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.instructions ol {
+  padding-left: 20px;
+}
+
+.instructions ol li::marker {
+  font-weight: 600;
+}
+
+li.instruction {
+  padding-left: 15px;
+  margin-bottom: 0.75rem;
+  color: hsl(30, 10%, 34%);
+  line-height: 1.5;
+}
+
+.nutrition {
+  color: hsl(30, 10%, 34%);
+}
+.nutrition p {
+  margin-bottom: 1.5rem;
+}
+
+.nutrition-table > * {
+  display: flex;
+}
+
+.nutrition-table div > div {
+  width: 50%;
+  padding: 0.8rem 1.5rem;
+}
+
+.nutrition-table > div {
+  border-bottom: 1px solid hsl(30, 18%, 87%);
+}
+
+.nutrition-table > div:last-child {
+  border: none;
+}
+.amount-per-serving {
+  color: hsl(14, 45%, 36%);
+}
+
+@media (max-width: 375px) {
+  body {
+    padding: 0;
+    position: relative;
+  }
+  main {
+    border-radius: 0;
+    padding: 12.5rem 2rem 2rem 2rem;
+  }
+
+  .img-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .img-container img {
+    border-radius: 0;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+}
